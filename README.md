@@ -11,7 +11,7 @@
 │   └──       <- После загрузки тут будут данные.
 ├── models
 │   ├── unet.py
-│   └── unet_weights.pth      <- Веса модели
+│   └── unet_weights.pth      <- Веса модели после загрузки.
 |
 ├── notebooks
 │   ├── coursework.ipynb      <- Главный ноутбук   
