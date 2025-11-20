@@ -3,10 +3,10 @@ import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Paths:
 CHECKPOINT_PATH = BASE_DIR / "models/checkpoint.pth"
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 TRAIN_DATASET_PATH = BASE_DIR / "data/BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData/"
 UNET_WEIGHTS_PATH = BASE_DIR / "models/unet_weights.pth"
 ARCHIVE_URL = "https://drive.google.com/uc?id=1QXmUdCwljYeJThjskDOsj4X4FF7My84v"
