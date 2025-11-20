@@ -1,0 +1,52 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "coursework_1"
+version = "0.0.1"
+description = "Brain tumor segmentation on BraTS dataset"
+authors = [
+  { name = "Your name (or your organization/company/team)" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+dependencies = [
+    "gdown>=5.2.0",
+    "loguru",
+    "matplotlib>=3.10.7",
+    "mkdocs",
+    "nibabel>=5.3.2",
+    "numpy>=2.2.6",
+    "opencv-python>=4.12.0.88",
+    "pandas>=2.3.3",
+    "pip",
+    "pytest",
+    "python-dotenv",
+    "ruff",
+    "scikit-image>=0.25.2",
+    "scikit-learn>=1.7.2",
+    "torch>=2.9.1",
+    "torchvision>=0.24.1",
+    "tqdm",
+    "typer",
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["coursework_1"]
+include = ["pyproject.toml", "coursework_1/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["coursework_1"]
+force-sort-within-sections = true
+
