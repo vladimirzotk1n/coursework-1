@@ -16,8 +16,8 @@
 │   └── coursework_dirty.ipynb      <- Ноутбук со всем кодом, можно запустить его в Google Colab отдельно
 ├── pyproject.toml
 ├── reports
-│   └── figures
-│       └──       <- Графики для отчета?
+│   
+│      
 └── coursework_1
     ├── __init__.py      
     ├── config.py       
