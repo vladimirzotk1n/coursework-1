@@ -1,5 +1,3 @@
-# coursework-1
-
 Сегментация опухоли мозга на наборе данных BraTS
 
 ## 📁 Структура проекта
@@ -38,7 +36,7 @@
 
 Как скачать:
 ```
-git clone <REPO>
+git clone https://github.com/vladimirzotk1n/coursework-1
 cd coursework-1
 uv sync
 ```
